@@ -1,0 +1,9 @@
+Del QuickStart se levanta el zookeeper
+bin/windows/zookeeper-server-start.bat C:\kafka-server\config\zookeeper.properties
+Luego el Kafka
+bin/windows/kafka-server-start.bat C:\kafka-server\config\server.properties
+
+Para leer los topics, en este caso el llamado one
+bin/windows/kafka-console-consumer.bat --topic one --from-beginning --bootstrap-server localhost:9092
+
+Revisar documentación de Kafka para levantarlo local con o sin docker
